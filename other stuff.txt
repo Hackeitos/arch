@@ -1,0 +1,4 @@
+
+- apt autoremove: yay -c
+- apt purge: yay -Rns
+
