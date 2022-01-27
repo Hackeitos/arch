@@ -3,7 +3,7 @@ export PART_BOOT_SIZE="300M"
 export PART_SWAP_SIZE="2G"
 
 export EXTRA_PACKAGES="nano sudo git fakeroot base-devel"
-export EXTRA_PACKAGES_YAY="ly xorg xorg-xinit xorg-font-misc qtile"
+export EXTRA_PACKAGES_YAY="ly xorg xorg-xinit xorg-font-misc qtile command-not-found pkgfile fish bat htop exa"
 
 export HOSTNAME="arch-test"
 export KEYMAP="es"
