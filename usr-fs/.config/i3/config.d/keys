@@ -1,0 +1,7 @@
+# Run menu
+set $run_dialog "rofi -modi drun,run -show drun"
+bindsym $mod+r exec $run_dialog
+bindsym Mod1+space exec $run_dialog
+
+# Explorer
+bindsym $mod+e exec "thunar"

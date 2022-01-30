@@ -1,8 +1,12 @@
 #!/bin/bash
 
-ls /sys/firmware/efi/efivars &> /dev/null || { echo "Not UEFI booted. Aborting..." ; exit; }
-
 source common.sh
+
+ls /sys/firmware/efi/efivars &> /dev/null || { echo "Not UEFI booted. Aborting..." ; exit; }
+ls $DISK &> /dev/null || { echo "$DISK does not exist. Aborting..." ; exit; }
+
+echo "Please confirm with [enter] that $DISK is the disk where you wanna install Arch. ALL DATA IN $DISK WILL BE LOST"
+read
 
 echo "Setting keybaoard layout..."
 loadkeys $KEYMAP

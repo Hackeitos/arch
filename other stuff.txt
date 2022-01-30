@@ -1,7 +1,4 @@
-
 - apt autoremove: yay -c
 - apt purge: yay -Rns
 
-- command-not-found: source /usr/share/doc/pkgfile/command-not-found.bash
-- X keyboard layout: localectl set-x11-keymap es
-- Change shell: chsh /usr/bin/fish
+- Enable multilib in /etc/pacman.conf

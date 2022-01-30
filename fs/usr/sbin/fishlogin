@@ -1,0 +1,5 @@
+#!/bin/bash -l
+
+[[ -z "$DISPLAY" ]] && [[ $(tty) = /dev/tty1 ]] && exec -l /usr/sbin/startx
+
+exec -l /usr/bin/fish "$@"

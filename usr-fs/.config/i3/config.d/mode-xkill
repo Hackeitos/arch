@@ -1,0 +1,5 @@
+bindsym --release $mod+Pause mode "KILL"; exec "xkill; i3-msg mode default"
+
+mode "KILL" {
+    bindsym Escape exec "killall xkill"
+}

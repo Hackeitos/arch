@@ -10,4 +10,5 @@ git clone https://aur.archlinux.org/yay.git
 
 rm -rf yay
 
+yay
 yay -S $EXTRA_PACKAGES_YAY
