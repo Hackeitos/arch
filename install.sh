@@ -18,7 +18,6 @@ sed -e 's/\s*\([\+0-9a-zA-Z]*\).*/\1/' << EOF | fdisk $DISK
   n  # New partition for /boot
   1  # ID 1
      # Default first sector
-  y  # Confirm if asked
   +${PART_BOOT_SIZE}
   t  # Change partition type
   1  # EFI System
@@ -26,7 +25,6 @@ sed -e 's/\s*\([\+0-9a-zA-Z]*\).*/\1/' << EOF | fdisk $DISK
   2  # ID 2
      # Default first sector
   +${PART_SWAP_SIZE}
-  y  # Confirm if asked
   t  # Change partition type
   2  # ID 2
   19 # Linux swap
@@ -34,7 +32,6 @@ sed -e 's/\s*\([\+0-9a-zA-Z]*\).*/\1/' << EOF | fdisk $DISK
   3  # ID 3
      # Default first sector
      # Use remaining space
-  y  # Confirm if asked
   t  # Change partition type
   3  # ID 3
   23 # Linux root (x86-64)

@@ -2,3 +2,12 @@
 - apt purge: yay -Rns
 
 - Enable multilib in /etc/pacman.conf
+
+- HOWTO:
+    - Run install.sh AS ROOT from arch installation media
+    - Run arch-setup.sh AS ROOT from arch-chrrot in installation media
+    - Reboot into installed arch
+    - Run network.sh AS ROOT
+    - Run yay.sh
+    - [Optional] Run ly.sh
+    - Run fs.sh
